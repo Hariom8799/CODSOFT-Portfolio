@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+#wrapper{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+/* --------------------NavBar--------------------------- */
+.container{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+.navBar{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+.logo-container{
+    object-position: center;
+    object-fit: cover;
+}
+.nav-item{
+    display: flex;
+    height: 100%;
+    gap: 2rem;
+    /* padding: 4em; */
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item a{
+    text-decoration: none;
+    color: black;
+    margin: 0 12px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-item div a:hover{
+    transition: all 0.8s;
+    font-weight: bold;
+}   
+
+/* ---------------------------Hero Section------------------------ */
+.hero-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+    gap: 5rem;
+    
+}
+.hero-section-right{
+
+}
