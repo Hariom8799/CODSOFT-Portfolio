@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/10dd969d80.js" crossorigin="anonymous"></script>
     <title>Portfolio Website - Hariom</title>
 </head>
 <body>
     <div id="wrapper">
+        <!-- -----------------------NavBar------------------------------- -->
         <section class="container">
             <div class="navBar">
                 <div class="logo-container">
@@ -20,16 +22,18 @@
                 </div>
             </div>
         </section>
+
+        <!-- ----------------------------Hero-Info-------------------------------- -->
         <section class="hero-section">
             <div class="faded-text">Hariom</div>
             <div class="hero-section-left">
                  <h1 class="hero-title">Hi! Hariom</h1>
-                 <p class="hero-subtitle">I am <span class="role">Programmer</span></p>
+                 <p class="hero-title hero-subtitle">I am <span id="role"></span></p>
                  <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eius, itaque, et ducimus quaerat, velit sint facilis ab ratione modi temporibus? Corrupti maxime dolore nesciunt reprehenderit eius, eligendi ea laborum nemo. Vero.</p>
                  <button class="btn btn-crimson">My CV</button>
             </div>
             <div class="hero-section-right">
-                <div class="absolute icons icon-dot">
+                <div class="absolute icons icon-dots">
                     <img src="images/userAsset/dots.png" alt="">
                 </div>
                 <div class="absolute icons icon-cube">
@@ -50,6 +54,45 @@
             </div>
 
         </section>
+
+        <!-- ---------------------------------Projects-------------------------------- -->
+        <section class="projects">
+            <h2 class="project-heading">Projects</h2>
+
+            <div class="project-container"> 
+
+                <div class="project-card left-card" id="project-1">
+                    <div class="project-num">01</div>
+                    <div class="project-content project-1">
+                        <div class="project-skills-container">
+                            <img src="images/stack/HTML.png" alt="" class="project-skills">
+                            <img src="images/stack/CSS.png" alt="" class="project-skills">
+                            <img src="images/stack/NodeJs.svg" alt="" class="project-skills">
+                            <img src="images/stack/Express.png" alt="" class="project-skills">
+                        </div>
+                        <div class="project-title">Tint & Orange</div>
+                        <div class="project-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione excepturi, animi minus commodi et quas vero natus beatae reiciendis eius debitis consequatur earum aperiam aliquam dolorum porro at! Dolor, fugiat!</div>
+                        <div class="btn-group">
+                            <button class="btn btn-crimson">Read More</button>
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
     </div>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed('#role',{
+            strings: ["Frontend Developer","Programmer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
 </body>
 </html>
