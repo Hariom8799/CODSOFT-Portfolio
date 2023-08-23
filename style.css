@@ -17,8 +17,10 @@
 /* --------------------NavBar--------------------------- */
 .container{
     display: flex;
+    flex-direction: column;
     width: 1200px;
     margin: 0 auto;
+    position: relative;
     
 }
 .navBar{
@@ -72,8 +74,8 @@
     user-select: none;
     font-size: 7em;
     font-weight: bold;
-    bottom: 0%;
-    left: 0%;
+    bottom: -30px;
+    left: 0;
     color: rgb(231, 231, 231);
     transition: all 3s;
 }
@@ -184,6 +186,152 @@
     left: 50%;
     animation: plusAnimation 5s ease-in infinite;
 }
+
+/* --------------------------------Project-section--------------------------- */
+
+.projects{
+    background-color: rgb(231, 231, 231);
+    padding: 4rem 0;
+
+}
+.project-heading{
+    font-size: 90px;
+    color: crimson;
+    text-align: center;
+    font-weight: bold;
+    padding: 30px 0;
+}
+.project-container{
+    display: flex ;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    gap: 120px;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.project-card{
+    width: 90%;
+    position: relative;
+    height: 550px;
+    background-image: url(./images//projects/Project1.png);
+    background-size: cover;
+    box-shadow: 0 0 40px #1f1f1f;
+    transition: all 200ms;
+}
+
+.project-card::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #1f1f1f9a;
+    transform: scale(1);
+    z-index: 0;
+}
+.project-card::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    transition: all 500ms;
+    z-index: 1;
+}
+.project-card:hover::before{
+    width: 100%;
+}
+.project-num{
+    display: none;
+    font-size: 200px;
+    position: absolute;
+    font-weight: 600;
+    color: white;
+    z-index: 10;
+}
+.project-card:hover .project-num{
+    display: block;
+}
+.left-project-card{
+    align-self: self-start;
+}
+.right-project-card{
+    align-self: self-end;
+}
+.project-num-right{
+    right: -5%;
+    top: -10%;
+}
+.project-num-left{
+    left: -5%;
+    top: -10%;
+}
+.project-content{
+    position: absolute;
+    width: 75%;
+    color: white;
+    z-index: 5;
+    bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    padding-left: 4em;
+    gap: 1em;
+    transition: all 0.5s;
+}
+.project-content-left{
+    left: 5%;
+}
+.project-content-right{
+    right: -20%;
+}
+
+.project-skills-container{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.project-skills{
+    width: 40px;
+}
+.project-title{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem
+}
+.project-description{
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+}
+.btn-group{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+.btn-project:hover{
+    border-color: white;
+}
+.icon{
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    transition: all 200ms;
+}
+.icon:hover{
+    color: crimson;
+}
+.project-card:hover .project-content{
+    transform: scale(1.1);
+}
+
+/* -------------------------------Animations------------------------------- */
 @keyframes imageScale {
     0%{
         transform: scale(1);
