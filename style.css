@@ -58,7 +58,7 @@
 
 /* ---------------------------Hero Section------------------------ */
 .hero-section{
-    width: 1200px;
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
@@ -361,12 +361,10 @@
 }
 .cap{
     font-size: 90px;
-}
+}   
 .skill-description{
     margin-top: 1rem;
     text-align: justify;
-}
-.skill-description{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -434,6 +432,56 @@
     font-size: 2rem;
 }
 
+/* -----------------------------------footer----------------------------- */
+#footer{
+    width: 100%;
+    background-color: #343d68;
+    position: relative;
+}
+.footer-div{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0;
+    margin-bottom: 7rem;
+}
+.footer-item{
+    display: flex;
+    gap: 1rem;
+    font-size: 20px;
+}
+.footer-item a{
+
+    text-decoration: none;
+    color: white;
+}
+.social-icons{
+    font-size: 2rem;
+    display: flex;
+    gap: 1rem;
+    color: white;
+    transition: all 200ms;
+}
+.footer-item a:hover{
+    color: crimson;
+}
+.icons{
+    transition: all 200ms ;
+    cursor: pointer;
+}
+.icons:hover{
+    color: crimson;
+}
+.footer-faded-text{
+    user-select: none;
+    font-weight: bold;
+    color: rgba(231, 231, 231, 0.301);
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    font-size: 5em;
+}
 @keyframes imageScale {
     0%{
         transform: scale(1);
@@ -498,3 +546,4 @@
         right: 56%;
     }
 }
+

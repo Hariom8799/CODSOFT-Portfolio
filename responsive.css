@@ -1,0 +1,61 @@
+@media only screen and (max-width:1200px) {
+    .container{
+        width: 80%;
+    }
+    .hero-section{
+        flex-direction: column;
+    }
+    .moving-text{
+       height: 4.5rem; 
+    }
+    .project-card{
+        background-position: center;
+    }
+    .left-project-card{
+        align-self: center;
+    }
+    .right-project-card{
+        align-self: center;
+    }
+    .project-content-right{
+        left: 5%;
+    }
+    .project-skills{
+        width: 25px;
+    }
+    .project-title{
+        font-size: 30px;
+    }
+    .skill-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .skill-container-left{
+        width: 100%;
+    }
+    .skill-container-right{
+        width: 100%;
+    }
+    .skill-faded-text{
+        bottom: -10%;
+    }
+}
+
+@media  screen and (max-width:800px) {
+    .nav-item{
+        display: none;
+    }
+    .navBar{
+        justify-content: center;
+    }
+    .project-description{
+        display: none;
+    }
+    .footer-div{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+}

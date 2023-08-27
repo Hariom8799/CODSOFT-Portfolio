@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css".css">
     <script src="https://kit.fontawesome.com/10dd969d80.js" crossorigin="anonymous"></script>
     <title>Portfolio Website - Hariom</title>
 </head>
@@ -28,7 +29,9 @@
             
             <div class="hero-section-left">
                  <h1 class="hero-title">Hi! Hariom</h1>
-                 <p class="hero-title hero-subtitle">I am <span id="role"></span></p>
+                 <div class="moving-text">
+                     <p class="hero-title hero-subtitle">I am <span id="role"></span></p>
+                 </div>
                  <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eius, itaque, et ducimus quaerat, velit sint facilis ab ratione modi temporibus? Corrupti maxime dolore nesciunt reprehenderit eius, eligendi ea laborum nemo. Vero.</p>
                  <button class="btn btn-crimson">My CV</button>
             </div>
@@ -63,7 +66,7 @@
             <h2 class="project-heading">Projects</h2>
             
             <!-- Card 1 -->
-            <div class="project-container"> 
+            <div class="project-container container"> 
 
                 <div class="project-card left-project-card" id="project-1">
                     <div class="project-num project-num-right">01</div>
@@ -215,6 +218,25 @@
                     <textarea class="input-field" name="" id="" cols="30" rows="10" placeholder="enter your message"></textarea>
                     <button class="btn btn-crimson contact-btn">Send Message <i class="fa-sharp fa-solid fa-paper-plane"></i></button>
                 </form>
+            </div>
+        </section>
+
+        <section id="footer">
+            <p class="footer-faded-text">Hariom</p>
+            <div class="container">
+                <footer class="footer-div">
+                    <div class="footer-item">
+                        <div><a href="#projects">Projects</a></div>
+                        <div><a href="#skills">Skills</a></div>
+                        <div><a href="#contact">Contact Me</a></div>
+                    </div>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-linkedin icons"></i>
+                        <i class="fa-brands fa-github icons"></i>
+                        <i class="fa-brands fa-square-x-twitter icons"></i>
+                        <i class="fa-solid fa-envelope icons"></i>
+                    </div>
+                </footer>
             </div>
         </section>
     </div>
